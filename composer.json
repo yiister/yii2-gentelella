@@ -1,0 +1,27 @@
+{
+  "name": "yiister/yii2-gentelella",
+  "description": "Free admin template for backend",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension","backend","bootsprap3","admin","gentelella","theme","asset"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Fedotov",
+      "email": "fps.06@mail.ru",
+      "homepage": "https://github.com/fps01",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "rmrevin/yii2-fontawesome": "~2.0",
+    "bower-asset/gentelella": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "yiister\\gentelella\\": ""
+    }
+  }
+}
