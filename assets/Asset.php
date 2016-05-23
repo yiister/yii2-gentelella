@@ -13,7 +13,9 @@ class Asset extends \yii\web\AssetBundle
     public $css = [
         'css/custom.css',
     ];
-    public $js = [];
+    public $js = [
+        'js/custom.js',
+    ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapPluginAsset',
