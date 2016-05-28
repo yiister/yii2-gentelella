@@ -85,17 +85,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                                 [
                                                     "label" => "Default",
                                                     "url" => "#",
-                                                    "icon" => "table",
                                                     "badge" => "123",
-                                                ],
-                                                [
-                                                    "label" => "Blue",
-                                                    "url" => "#",
-                                                    "icon" => "table",
-                                                    "badge" => "123",
-                                                    "badgeOptions" => [
-                                                        "class" => \yiister\adminlte\components\AdminLTE::BG_BLUE,
-                                                    ],
                                                 ],
                                             ],
                                         ],
@@ -111,7 +101,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                                 [
                                                     "label" => "Second level",
                                                     "url" => "#",
-                                                    "icon" => "table",
                                                     "items" => [
                                                         [
                                                             "label" => "Default",
@@ -120,7 +109,6 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
                                                         [
                                                             "label" => "Red",
                                                             "url" => "#",
-                                                            "icon" => "table",
                                                         ],
                                                     ],
                                                 ],
