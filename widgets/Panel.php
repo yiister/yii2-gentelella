@@ -29,6 +29,11 @@ class Panel extends Widget
     public $header;
 
     /**
+     * @var string the icon name
+     */
+    public $icon;
+
+    /**
      * @var boolean whether the expand button is shown
      */
     public $expandable = false;
@@ -75,7 +80,7 @@ class Panel extends Widget
         if ($this->header !== null) {
             $this->initTools();
             echo Html::beginTag('div', ['class' => 'x_title']);
-            echo Html::tag('h2', $this->header);
+            echo Html::tag('h2', ($this->icon !== null ? new Icon($this->icon) . ' ' : '') . $this->header);
             if (empty($this->tools) === false) {
                 echo Html::tag(
                     'ul',
