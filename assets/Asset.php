@@ -9,7 +9,7 @@ namespace yiister\gentelella\assets;
 
 class Asset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/bower/gentelella/production/';
+    public $sourcePath = '@vendor/bower/gentelella/build/';
     public $css = [
         'css/custom.css',
     ];
