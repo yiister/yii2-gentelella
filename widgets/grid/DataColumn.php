@@ -4,6 +4,7 @@
  * @license https://github.com/yiister/yii2-gentelella/blob/master/LICENSE
  * @link http://gentelella.yiister.ru
  */
+
 namespace yiister\gentelella\widgets\grid;
 
 use yii\helpers\Html;
