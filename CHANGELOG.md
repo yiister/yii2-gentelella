@@ -4,6 +4,8 @@ Yii2 Gentelella Change Log
 1.2.0 under development
 -----------------------
 
+- Fix #6: using a PHP 5.4 instead of 5.5
+
 1.1.0 June 26, 2016
 -----------------------
 
