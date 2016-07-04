@@ -7,10 +7,15 @@
 
 namespace yiister\gentelella\assets;
 
-class Asset extends \yii\web\AssetBundle
+use yii\web\AssetBundle;
+
+class ExtensionAsset extends AssetBundle
 {
+    public $sourcePath = '@yiister/gentelella/assets/src';
+    public $js = [
+        'js/extension.js',
+    ];
     public $depends = [
-        'yiister\gentelella\assets\ThemeAsset',
-        'yiister\gentelella\assets\ExtensionAsset',
+        'yii\web\JqueryAsset',
     ];
 }
