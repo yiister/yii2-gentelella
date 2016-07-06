@@ -4,6 +4,7 @@ Yii2 Gentelella Change Log
 1.2.0 under development
 -----------------------
 
+- New #8: Added a `yiister\gentelella\widgets\Timeline` widget (fps01)
 - New #5: Added an ability to keep a sidebar state (fps01)
 - Fix #6: using a PHP 5.4 instead of 5.5
 
