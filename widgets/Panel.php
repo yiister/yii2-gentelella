@@ -9,12 +9,13 @@ namespace yiister\gentelella\widgets;
 
 use rmrevin\yii\fontawesome\component\Icon;
 use yii\base\Widget;
+use yii\bootstrap\Nav;
 use yii\helpers\Html;
 
 class Panel extends Widget
 {
     /**
-     * @var string[]
+     * @var array the configuration array for creating a [[Dropdown]] widget
      */
     protected $tools = [];
 
@@ -49,23 +50,38 @@ class Panel extends Widget
     public $removable = false;
 
     /**
-     * Inits tool buttons
+     * @var array|string, optional, the configuration array for creating a [[Dropdown]] widget,
+     *   or a string representing the dropdown menu.
+     */
+    public $headerMenu = [];
+
+    /**
+     * Init tool buttons
      */
     protected function initTools()
     {
         if ($this->expandable === true || $this->collapsable === true) {
-            $this->tools[] = Html::tag(
-                'a',
-                new Icon('chevron-' . ($this->expandable === true ? 'down' : 'up')),
-                ['class' => 'collapse-link']
-            );
+            $this->tools[] = [
+                'encode' => false,
+                'label' => new Icon('chevron-' . ($this->expandable === true ? 'down' : 'up')),
+                'linkOptions' => ['class' => 'collapse-link'],
+                'url' => null,
+            ];
+        }
+        if (empty($this->headerMenu) === false) {
+            $this->tools[] = [
+                'encode' => false,
+                'items' => $this->headerMenu,
+                'label' => new Icon('wrench'),
+            ];
         }
         if ($this->removable === true) {
-            $this->tools[] = Html::tag(
-                'a',
-                new Icon('close'),
-                ['class' => 'close-link']
-            );
+            $this->tools[] = [
+                'encode' => false,
+                'label' => new Icon('close'),
+                'linkOptions' => ['class' => 'close-link'],
+                'url' => null,
+            ];
         }
     }
 
@@ -82,10 +98,14 @@ class Panel extends Widget
             echo Html::beginTag('div', ['class' => 'x_title']);
             echo Html::tag('h2', ($this->icon !== null ? new Icon($this->icon) . ' ' : '') . $this->header);
             if (empty($this->tools) === false) {
-                echo Html::tag(
-                    'ul',
-                    '<li>' . implode("</li>\n<li>", $this->tools) . '</li>',
-                    ['class' => 'nav navbar-right panel_toolbox']
+                echo Nav::widget(
+                    [
+                        'dropDownCaret' => '',
+                        'items' => $this->tools,
+                        'options' => [
+                            'class' => 'nav navbar-right panel_toolbox',
+                        ],
+                    ]
                 );
             }
             echo Html::tag('div', null, ['class' => 'clearfix']);
