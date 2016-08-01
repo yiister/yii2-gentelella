@@ -1,9 +1,13 @@
 Yii2 Gentelella Change Log
 ==========================
 
-1.2.0 under development
+1.3.0 Under development
 -----------------------
 
+1.2.0 August 1, 2016
+--------------------
+
+- Fix #9: Temporary fix for fxp 1.2.0 (fps01)
 - Enh #7: Add a an ability to add custom items to dropdown list of `yiister\gentelella\widgets\Panel` (fps01)
 - New #8: Added a `yiister\gentelella\widgets\Timeline` widget (fps01)
 - New #5: Added an ability to keep a sidebar state (fps01)
