@@ -4,6 +4,8 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+- Fix #13: Make FlashAlert widget array compatible (al.gushchin)
+
 1.2.0 August 1, 2016
 --------------------
 

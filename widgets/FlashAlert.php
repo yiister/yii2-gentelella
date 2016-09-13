@@ -69,14 +69,16 @@ class FlashAlert extends Widget
                         (isset($alert['icon']) ? new Icon($alert['icon']) . '&nbsp;' : '') . $alert['header']
                     );
                 }
-                echo Alert::widget(
-                    [
-                        'body' => $header . Yii::$app->session->getFlash($flashName),
-                        'options' => [
-                            'class' => 'alert alert-' . $alert['class'],
-                        ],
-                    ]
-                );
+                foreach ((array) Yii::$app->session->getFlash($flashName) as $message) {
+                    echo Alert::widget(
+                        [
+                            'body' => $header . $message,
+                            'options' => [
+                                'class' => 'alert alert-' . $alert['class'],
+                            ],
+                        ]
+                    );
+                }
             }
         }
         echo Html::endTag('div');
