@@ -4,6 +4,10 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+1.2.1 March 21, 2017
+--------------------
+
+- Fix #15: Fixed an error "Jquery Error progressbar is not a function" (fps01)
 - Fix #13: Make FlashAlert widget array compatible (al.gushchin)
 
 1.2.0 August 1, 2016

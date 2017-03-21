@@ -9,19 +9,16 @@ namespace yiister\gentelella\assets;
 
 use yii\web\AssetBundle;
 
-class ThemeAsset extends AssetBundle
+class BootstrapProgressbar extends AssetBundle
 {
-    public $sourcePath = '@vendor/bower/gentelella/build/';
+    public $sourcePath = '@vendor/bower/gentelella/vendors/bootstrap-progressbar/';
     public $css = [
-        'css/custom.css',
+//        'css/custom.css',
     ];
     public $js = [
-        'js/custom.js',
+        'bootstrap-progressbar.min.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapPluginAsset',
-        'rmrevin\yii\fontawesome\AssetBundle',
-        'yiister\gentelella\assets\BootstrapProgressbar',
     ];
 }
