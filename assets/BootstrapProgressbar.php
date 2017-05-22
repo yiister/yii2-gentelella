@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 
 class BootstrapProgressbar extends AssetBundle
 {
-    public $sourcePath = '@vendor/bower/gentelella/vendors/bootstrap-progressbar/';
+    public $sourcePath = '@bower/gentelella/vendors/bootstrap-progressbar/';
     public $css = [
 //        'css/custom.css',
     ];

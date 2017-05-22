@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 
 class ThemeAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/bower/gentelella/build/';
+    public $sourcePath = '@bower/gentelella/build/';
     public $css = [
         'css/custom.css',
     ];
