@@ -4,6 +4,11 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+1.2.1 May 22, 2017
+------------------
+
+- Fix #17: Fixed source paths for bower (MKiselev)
+
 1.2.1 March 21, 2017
 --------------------
 
