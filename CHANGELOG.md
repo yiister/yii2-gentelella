@@ -4,6 +4,11 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+1.2.3 July 4, 2017
+------------------
+
+- Enh #22: Created Accordion widget (fps01)
+
 1.2.2 May 22, 2017
 ------------------
 
