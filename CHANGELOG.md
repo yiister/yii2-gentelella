@@ -4,6 +4,11 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+1.2.4 July 10, 2017
+-------------------
+
+- Enh #20: Added an ability to make an active menu item via `active` attribute (fps01)
+
 1.2.3 July 4, 2017
 ------------------
 
