@@ -17,7 +17,7 @@ class Panel extends Widget
     /**
      * @var array the configuration array for creating a [[Dropdown]] widget
      */
-    protected $tools = [];
+    public $tools = [];
 
     /**
      * @var array the HTML attributes for the widget container tag
