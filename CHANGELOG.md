@@ -4,6 +4,11 @@ Yii2 Gentelella Change Log
 1.3.0 Under development
 -----------------------
 
+1.2.5 July 12, 2017
+-------------------
+
+- Enh #23: Added an ability to add custom buttons in Panel widget (SamMousa)
+
 1.2.4 July 10, 2017
 -------------------
 
