@@ -27,7 +27,7 @@ $bundle = yiister\gentelella\assets\Asset::register($this);
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="nav-md">
+<body class="nav-<?php echo (!empty($_COOKIE['menuIsCollapsed']))?'sm':'md' ?>" >
 <?php $this->beginBody(); ?>
 <div class="container body">
 
