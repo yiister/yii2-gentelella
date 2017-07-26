@@ -7,9 +7,7 @@
 GentelellaExtension = {
     'init': function () {
         $SIDEBAR_MENU.find('li.active').addClass('current-page').parents('ul').parent().addClass('active');
-        if (this.getCookie('menuIsCollapsed') == 'true') {
-            jQuery('#menu_toggle').trigger('click');
-        } else {
+        if (this.getCookie('menuIsCollapsed') != 'true') {
             $SIDEBAR_MENU.find('li.active').parents('ul').slideDown();
         }
         jQuery('#menu_toggle').click(function() {
