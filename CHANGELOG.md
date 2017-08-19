@@ -1,32 +1,17 @@
 Yii2 Gentelella Change Log
 ==========================
 
-1.3.0 Under development
+1.4.0 Under development
 -----------------------
 
-1.2.5 July 12, 2017
--------------------
+1.3.0 Aug 19, 2017
+------------------
 
+- Enh #25: Implemented another algorithm of sidebar state keeping (mohdqasim98)
 - Enh #23: Added an ability to add custom buttons in Panel widget (SamMousa)
-
-1.2.4 July 10, 2017
--------------------
-
 - Enh #20: Added an ability to make an active menu item via `active` attribute (fps01)
-
-1.2.3 July 4, 2017
-------------------
-
 - Enh #22: Created Accordion widget (fps01)
-
-1.2.2 May 22, 2017
-------------------
-
 - Fix #17: Fixed source paths for bower (MKiselev)
-
-1.2.1 March 21, 2017
---------------------
-
 - Fix #15: Fixed an error "Jquery Error progressbar is not a function" (fps01)
 - Fix #13: Make FlashAlert widget array compatible (al.gushchin)
 
