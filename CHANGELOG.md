@@ -4,6 +4,11 @@ Yii2 Gentelella Change Log
 1.4.0 Under development
 -----------------------
 
+1.3.1 Nov 12, 2017
+------------------
+
+- Enh #26: Removed a demo code from `ThemeAsset` (fps01)
+
 1.3.0 Aug 19, 2017
 ------------------
 
