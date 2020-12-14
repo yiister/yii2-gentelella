@@ -66,7 +66,7 @@ class Menu extends \yii\widgets\Menu
                         : ''
                     ) . (
                     isset($item['items']) && count($item['items']) > 0
-                        ? (new Icon('chevron-down'))->tag('span')
+                        ? Html::tag('span', new Icon('chevron-down'))
                         : ''
                     ),
             ]
