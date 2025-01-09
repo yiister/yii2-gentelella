@@ -15,9 +15,8 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "~2.0.0",
-    "yiisoft/yii2-bootstrap": "~2.0.0",
-    "rmrevin/yii2-fontawesome": "~2.0",
-    "bower-asset/gentelella": "*"
+    "yiisoft/yii2-bootstrap5": "~2.0.0",
+    "rmrevin/yii2-fontawesome": "~2.0"
   },
   "autoload": {
     "psr-4": {

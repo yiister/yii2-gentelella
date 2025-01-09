@@ -1,15 +1,15 @@
 <?php
 /**
- * @copyright Copyright (c) 2015 Yiister
+ * @copyright Copyright (c) 2015-2025 Yiister
  * @license https://github.com/yiister/yii2-gentelella/blob/master/LICENSE
- * @link http://gentelella.yiister.ru
+ * @link https://github.com/yiister/yii2-gentelella
  */
 
 namespace yiister\gentelella\widgets;
 
 use rmrevin\yii\fontawesome\component\Icon;
 use yii\base\Widget;
-use yii\bootstrap\Nav;
+use yii\bootstrap5\Nav;
 use yii\helpers\Html;
 
 class Panel extends Widget
@@ -100,7 +100,6 @@ class Panel extends Widget
             if (empty($this->tools) === false) {
                 echo Nav::widget(
                     [
-                        'dropDownCaret' => '',
                         'items' => $this->tools,
                         'options' => [
                             'class' => 'nav navbar-right panel_toolbox',
